@@ -30,3 +30,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 接下来进行路由配置；
 
+接下来安装element UI
