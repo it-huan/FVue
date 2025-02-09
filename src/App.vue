@@ -28,4 +28,14 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+/* flex布局类名 */
+.flex-float{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
 </style>

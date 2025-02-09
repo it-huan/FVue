@@ -24,17 +24,19 @@ yarn lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-创建一个project文件夹并在vscode上打开终端，输入cnmp i yarn -g进行全局配置，接下来输入vue create shop创建名为shop的vue项目，回车选择好，创建成功在终端输入yarn serve   或   npm run serve来运行程序；
+>创建一个project文件夹并在vscode上打开终端，输入cnmp i yarn -g进行全局配置，接下来输入vue create shop创建名为shop的vue项目，回车选择好，创建成功在终端输入yarn serve   或   npm run serve来运行程序；
 
-接下来进行修改eslint报错设置，在vue.config.js文件里写入lintOnSave:false 然后重新运行即可；
+>接下来进行修改eslint报错设置，在vue.config.js文件里写入lintOnSave:false 然后重新运行即可；
 
-接下来进行路由配置；
+>接下来进行路由配置；
 
-接下来安装element UI{
+>接下来安装element UI{
     npm install element-plus --save
 }
-引入element UI{
+在main.js引入element UI{
     import ElementPlus from 'element-plus'
     import 'element-plus/dist/index.css'
     .use(ElementPlus)
 }
+
+>安装组件【安装了container布局容器和button按钮组件，利用flex布局对layout页面进行布局】
