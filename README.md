@@ -30,4 +30,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 接下来进行路由配置；
 
-接下来安装element UI
+接下来安装element UI{
+    npm install element-plus --save
+}
+引入element UI{
+    import ElementPlus from 'element-plus'
+    import 'element-plus/dist/index.css'
+    .use(ElementPlus)
+}
