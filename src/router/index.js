@@ -3,13 +3,20 @@ import LayOut from '../views/LayOut/LayOut.vue'
 
 //路由配置
 const routes = [
+  //登入页面
   {
-    path: '/',
+    path:"/login",
+    name:"login",
+    component:()=>import("../views/pages/login.vue")
+  },
+  {
+    path: '/page',
     name: 'layout',
     component: LayOut,
     // redirect:"/index",
     //子路由 或 嵌套路由
     children:[
+      
       {
         path:'/roles',
         name:'roles',
