@@ -1,11 +1,11 @@
 <template>
     <div>
-        <hi>角色列表</hi>
+        <hi>商品列表</hi>
     </div>
 </template>
 <script>
     export default{
-        name:"rolesList",
+        name:"goodsList",
 
     }
 </script>

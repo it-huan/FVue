@@ -7,18 +7,23 @@ const routes = [
     path: '/',
     name: 'layout',
     component: LayOut,
-    redirect:"/index",
+    // redirect:"/index",
     //子路由 或 嵌套路由
     children:[
       {
-        path:'/index',
-        name:'index',
+        path:'/roles',
+        name:'roles',
         component:()=>import("../views/pages/rolesList.vue")  //懒加载
       },
       {
         path:'/user',
         name:'user',
         component:()=>import("../views/pages/usersList.vue")  //懒加载
+      },
+      {
+        path:'/goods',
+        name:'goods',
+        component:()=>import("../views/pages/goodsList.vue")  //懒加载
       }
     ]
   }

@@ -40,3 +40,23 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 }
 
 >安装组件【安装了container布局容器和button按钮组件，利用flex布局对layout页面进行布局】
+
+>menu制作
+
+>安装icon{
+    npm install @element-plus/icons-vue
+}
+注册一下{
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+
+const app = createApp(App)
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+  app.component(key, component)
+}
+}
+<el-icon><User /></el-icon>
+
+
+
+
+
