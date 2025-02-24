@@ -7,6 +7,7 @@ const routes = [
   {
     path:"/login",
     name:"login",
+    //懒加载
     component:()=>import("../views/pages/login.vue")
   },
  {
@@ -44,6 +45,7 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes
 })
+//路由守卫
 router.beforeEach((to,form,next)=>{
   /**
    * to:从哪个页面

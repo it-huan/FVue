@@ -8,7 +8,7 @@
                 <img class="logo" src="../../assets/logo.png" alt="">
                 <h1 class="title">商铺后台管理系统</h1>
            </div>  
-            <el-button @click="loginOut">退出</el-button>
+            <el-button type="danger" @click="loginOut">退出</el-button>
       </el-header>
       <el-container>
         <el-aside class="common-aside" width="200px">
@@ -84,13 +84,14 @@ export default {
         overflow: hidden;
     }
     .common-header{
-        background: rgb(39, 45, 53); 
+        background: rgb(11, 99, 95); 
     } 
     .common-aside{
-        background: rgb(48, 55, 65);
+        background: rgb(33, 133, 133);
     }
     .logo{
-        width: 80px;
+        width: 46px;
+        padding: 22px 9px 20px 0px;
     }
     .title{
         color: #fff;
