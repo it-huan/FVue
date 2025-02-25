@@ -1,7 +1,7 @@
 <template>
     <div class="login_wrap">
         <div class="form_wrap">
-          
+            <div class="header">欢迎光临</div>
             <el-form
                 ref="formRef"
                 :model="loginData"
@@ -38,6 +38,10 @@
             </el-form>
             <el-button type="primary" class="login_btn" @click="handleLogin">登录</el-button>
             <!-- <p>{{num}}</p> -->
+            <div class="msg">
+                Don't have account?
+                <a href="#">Sign up</a>
+            </div>
         </div>
     </div>
 </template>    
@@ -101,7 +105,7 @@ export default {
     .login_wrap{
         width: 100%;
         height: 100vh;
-        background: rgb(56, 86, 139);
+        background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
         position: relative;
     }
     .form_wrap{
@@ -110,11 +114,40 @@ export default {
         left: 50%;
         transform: translate(-50%,-50%);
         background: #fff;
-        padding:30px 50px;
         border-radius: 5px;
+        width: 320px; /* 适当增加宽度 */
+        height: auto; /* 改为自适应高度 */
+        padding: 40px 30px;
     }
     .login_btn{
         display: block;
         margin: 10px auto;
     }
+    /* 新增header样式 */
+    .header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    }
+
+    /* 调整表单容器样式 */
+    .el-form {
+    margin: 0 auto;
+    width: 100%;
+    }
+
+    /* 调整登录按钮样式 */
+    .login_btn {
+    width: 100%;
+    margin-top: 20px;
+    }
+
+    /* 注册信息居中 */
+    .msg {
+    text-align: center;
+    margin-top: 25px;
+    color: #666;
+    }
+    
+    
 </style>
